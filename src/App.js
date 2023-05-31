@@ -25,11 +25,11 @@ function App() {
 			<Sidebar />
 			<Routes>
 				<Route
-					path="/"
+					path="/cryptocurrency-tracker"
 					element={<Dashboard />}
 				/>
 				<Route
-					path="/exchanges"
+					path="/cryptocurrency-tracker/exchanges"
 					element={<Exchanges />}
 				/>
 			</Routes>
