@@ -1,0 +1,39 @@
+.currency_table {
+	list-style: none;
+	color: #fff;
+
+	.header,
+	.row {
+		border-radius: 12px;
+		display: flex;
+		padding: 1rem;
+		border: rgba(255, 251, 5, 0.945) 1px solid;
+		cursor: pointer;
+		& > * {
+			flex-basis: 33.33%;
+		}
+		&:hover {
+			border: lighten($secondary-color, 20)
+				1px solid;
+		}
+	}
+
+	.header {
+		background-color: lighten(
+			$base-color,
+			15
+		);
+		&:hover {
+			border: rgb(255, 251, 1) 1px solid;
+		}
+	}
+
+	.row-no-hover {
+		border: none;
+		cursor: default;
+		border: none;
+		&:hover {
+			border: none;
+		}
+	}
+}
